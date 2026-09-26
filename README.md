@@ -23,7 +23,7 @@
 
 The portfolio is deployed online using Render.
 
-> 🔗 **Live Portfolio:** `YOUR_RENDER_URL_HERE`
+> 🔗 **Live Portfolio:** https://deepak-portfolio-iene.onrender.com/
 
 ---
 
