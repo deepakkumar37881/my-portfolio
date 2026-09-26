@@ -4,10 +4,6 @@
 
 ### ⚡ HIGH-PERFORMANCE 3D PORTFOLIO • MODERN WEB EXPERIENCE ⚡
 
-[![GitHub](https://img.shields.io/badge/GITHUB-deepakkumar37881-06b6d4?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/deepakkumar37881)
-
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Deepak%20Kumar-0a66c2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/)
-
 <br/>
 
 <img src="./portfolio_thumbnail.png" alt="Deepak Kumar Portfolio Preview" width="100%" style="border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.6);" />
