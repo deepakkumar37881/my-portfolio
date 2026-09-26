@@ -1,34 +1,23 @@
 <div align="center">
 
-```
-   █████╗ ██████╗ ██╗   ██╗ █████╗ ███╗   ██╗    ███████╗██╗  ██╗ █████╗ ██████╗ ███╗   ███╗ █████╗ 
-  ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗████╗  ██║    ██╔════╝██║  ██║██╔══██╗██╔══██╗████╗ ████║██╔══██╗
-  ███████║██████╔╝ ╚████╔╝ ███████║██╔██╗ ██║    ███████╗███████║███████║██████╔╝██╔████╔██║███████║
-  ██╔══██║██╔══██╗  ╚██╔╝  ██╔══██║██║╚██╗██║    ╚════██║██╔══██║██╔══██║██╔══██╗██║╚██╔╝██║██╔══██║
-  ██║  ██║██║  ██║   ██║   ██║  ██║██║ ╚████║    ███████║██║  ██║██║  ██║██║  ██║██║ ╚═╝ ██║██║  ██║
-  ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝
-```
+# DEEPAK KUMAR
 
-### ⚡ HIGH-PERFORMANCE 3D SCROLL CANVAS &bull; APPLE CLEAR LIQUID GLASS PORTFOLIO ⚡
+### ⚡ HIGH-PERFORMANCE 3D PORTFOLIO • MODERN WEB EXPERIENCE ⚡
 
-[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-aaddi1.github.io%2FMy--Portfolio-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://aaddi1.github.io/My-Portfolio/)
-[![GitHub](https://img.shields.io/badge/GITHUB-aaddi1-06b6d4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aaddi1)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Aryan%20Sharma-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aryan-sharma11/)
-[![X Profile](https://img.shields.io/badge/X%20(TWITTER)-@aryan56710-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aryan56710)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-@aryansharma.dev-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/aryansharma.dev/)
+[![GitHub](https://img.shields.io/badge/GITHUB-deepakkumar37881-06b6d4?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/deepakkumar37881)
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Deepak%20Kumar-0a66c2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/)
 
 <br/>
 
-<img src="./portfolio_thumbnail.png" alt="Aryan Sharma Portfolio Preview" width="100%" style="border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.6);" />
+<img src="./portfolio_thumbnail.png" alt="Deepak Kumar Portfolio Preview" width="100%" style="border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.6);" />
 
 <br/><br/>
 
-[![Engine](https://img.shields.io/badge/Engine-HTML5%20Canvas%2024FPS-black?style=flat-square&logo=html5)](https://github.com/aaddi1/My-Portfolio)
+[![Engine](https://img.shields.io/badge/Engine-HTML5%20Canvas-black?style=flat-square\&logo=html5)](#)
 [![Scroll](https://img.shields.io/badge/Scroll-Lenis%20Smooth%20Scroll-purple?style=flat-square)](https://github.com/darkroomengineering/lenis)
-[![Design](https://img.shields.io/badge/Design-Apple%20Clear%20Liquid%20Glass-white?style=flat-square&logo=apple)](https://github.com/aaddi1/My-Portfolio)
-[![Vite](https://img.shields.io/badge/Bundler-Vite%206-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-emerald?style=flat-square)](https://aaddi1.github.io/My-Portfolio/)
-[![License](https://img.shields.io/badge/License-Proprietary%20All%20Rights%20Reserved-red?style=flat-square)](./LICENSE)
+[![Vite](https://img.shields.io/badge/Bundler-Vite%206-646CFF?style=flat-square\&logo=vite\&logoColor=white)](https://vitejs.dev/)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-10b981?style=flat-square)](#)
 
 </div>
 
@@ -36,150 +25,345 @@
 
 ## 🌐 Live Deployment
 
-Experience the interactive 3D scroll canvas and Apple Clear Liquid Glass system:
-> 🔗 **[https://aaddi1.github.io/My-Portfolio/](https://aaddi1.github.io/My-Portfolio/)**
+The portfolio is deployed online using Render.
+
+> 🔗 **Live Portfolio:** `YOUR_RENDER_URL_HERE`
 
 ---
 
-## 🚀 Overview & Architecture
+## 👨‍💻 About Me
 
-**Aryan Sharma's Digital Portfolio** is an ultra-fast, cinematic, interactive web engineering showcase designed with an asynchronous **24fps 3D frame scrubbing canvas engine** synchronized to **Lenis inertial smooth scrolling**, paired with a **VisionOS-inspired Apple Clear Liquid Glass UI architecture**.
+**Deepak Kumar** is a Full Stack Developer and DevOps Engineer focused on building modern, high-performance, responsive, and scalable web applications.
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                        VIEWPORT & BROWSER WINDOW                       │
-├────────────────────────────────────────────────────────────────────────┤
-│  [ Fixed Header ] Avatar Logo + Navigation + Status Pulse Dot          │
-│                                                                        │
-│  ┌──────────────────────────────────────────────────────────────────┐  │
-│  │                     FOREGROUND UI LAYER (Z: 10)                  │  │
-│  │  • Hero Typographic Display + Infinite Brand Marquee             │  │
-│  │  • About Me (Framed Avatar + Experience Telemetry)               │  │
-│  │  • 5x Services Grid (3D Modeling, Shaders, Animations, CAD)      │  │
-│  │  • 4x Featured Repositories (NEXUS, Cinder House, Advocate, Star)│  │
-│  │  • 16x Verified Credentials (With Filter Tabs & Modal Lightbox)  │  │
-│  │  • Verified Client Reviews & Interactive Contact Form            │  │
-│  │  • 4-Column Footer + Official 2-Page Legal Notice (PDF)          │  │
-│  └──────────────────────────────────────────────────────────────────┘  │
-│                                                                        │
-│  ┌──────────────────────────────────────────────────────────────────┐  │
-│  │                BACKGROUND 3D CANVAS ENGINE (Z: 0)                │  │
-│  │  • 240 Compressed High-Definition 1080p JPEG Frames              │  │
-│  │  • Retina High-DPI Scaling (DevicePixelRatio Clamped)            │  │
-│  │  • requestAnimationFrame Lerp Interpolation (Damping 0.22)       │  │
-│  │  • Concurrency Prefetch Pool (16 Parallel Threads + Async Decode)│  │
-│  │  • Nearest-Neighbor Frame Fallback for Zero Jitter               │  │
-│  └──────────────────────────────────────────────────────────────────┘  │
-└────────────────────────────────────────────────────────────────────────┘
+I work across the complete development lifecycle — from frontend development and REST APIs to databases, cloud deployment, containerization, and CI/CD.
+
+### What I Work With
+
+* Full Stack Web Development
+* React.js & JavaScript
+* HTML5 & CSS3
+* Node.js & Express.js
+* REST APIs
+* MySQL & MongoDB
+* Docker & Docker Compose
+* Kubernetes
+* AWS Cloud
+* Jenkins & CI/CD
+* Git & GitHub
+* Cloud Deployment & DevOps
+
+---
+
+## 🚀 Portfolio Overview
+
+This portfolio is designed as an interactive web engineering showcase combining modern frontend development, smooth scrolling, animations, responsive UI, and a high-performance 3D canvas experience.
+
+The project is built with a focus on:
+
+* Modern UI/UX
+* Responsive design
+* Smooth scrolling
+* Interactive animations
+* Performance optimization
+* Clean component architecture
+* Production-ready deployment
+
+---
+
+## 🏗️ Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────────────┐
+│                         PORTFOLIO WEBSITE                           │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │                         FRONTEND                              │  │
+│  │                                                               │  │
+│  │  • React Components                                           │  │
+│  │  • Responsive UI                                              │  │
+│  │  • Hero Section                                               │  │
+│  │  • About Section                                              │  │
+│  │  • Skills & Services                                          │  │
+│  │  • Projects                                                   │  │
+│  │  • Certificates                                               │  │
+│  │  • Contact Section                                            │  │
+│  │                                                               │  │
+│  └───────────────────────────────────────────────────────────────┘  │
+│                                                                     │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │                    ANIMATION ENGINE                           │  │
+│  │                                                               │  │
+│  │  • HTML5 Canvas                                               │  │
+│  │  • Smooth Scroll                                               │  │
+│  │  • Frame Animation                                             │  │
+│  │  • Interactive Effects                                         │  │
+│  │                                                               │  │
+│  └───────────────────────────────────────────────────────────────┘  │
+│                                                                     │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │                       DEPLOYMENT                              │  │
+│  │                                                               │  │
+│  │  GitHub → Render → Live Portfolio                             │  │
+│  │                                                               │  │
+│  └───────────────────────────────────────────────────────────────┘  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## ✨ Core Features
 
-### 🎬 1. High-Speed 3D Canvas Frame Engine
-- **240 Full HD Frames:** Seamlessly scrubs 24fps motion graphics relative to scroll progress.
-- **Async Decoding (`img.decode()`):** Offloads JPEG decompression from the main UI thread to prevent scroll hitching.
-- **Retina High-DPI Cover Fitting:** Dynamically scales to `window.devicePixelRatio` without distortion across ultrawide monitors, MacBooks, tablets, and smartphones.
-- **Lenis Smooth Scroll Lerp:** Interpolates frame indices with cubic-bezier easing for buttery 120Hz/60Hz frame scrubbing.
+### 🎬 1. Interactive 3D Canvas
 
-### 💎 2. Apple VisionOS Clear Liquid Glass UI
-- **Multi-Layer Specular Gradients:** Subtle light-refracting highlights angled across all interactive cards.
-- **Deep Frosted Backdrop Filter:** `backdrop-filter: blur(32px) saturate(210%) brightness(108%)` allowing the 3D models to illuminate through translucent glass panels.
-- **Squircle Geometries:** 24px Apple squircle curvature with inner prism borders.
-- **Hover Micro-Interactions:** Elevation lift and dynamic specular sheen on cards and badges.
+* Smooth frame-based animations
+* HTML5 Canvas rendering
+* Responsive high-DPI scaling
+* Smooth scrolling integration
+* Optimized frame loading
+* Interactive visual experience
 
-### 📜 3. Verified Credentials & Interactive Lightbox
-- **17 Verified Certifications & Badges:** Features IBM SkillsBuild (AI Fundamentals), Oracle Java Learning Explorer, Google Play Academy, Claude Academy (101, CLI & In Action), Microsoft Blazor, AWS Cloud Developer, BCG X Generative AI, Bank of America Global Markets, Deloitte Cybersecurity, ISRO / IIRS Outreach, HP LIFE, Mastercard Consulting, and Scaler Academy.
-- **Category Filter Tabs:** Instant sorting by `ALL (17)`, `AI & CLAUDE`, `CLOUD & GOOGLE`, `ENTERPRISE`, and `ENGINEERING`.
-- **Generated PNG Document Previews:** Instant visual previews with zoom expand triggers and modal lightbox support for PDF inspection.
+### 💎 2. Modern Glassmorphism UI
 
-### 📂 4. Featured GitHub Repositories
-- **[NEXUS](https://github.com/aaddi1/NEXUS):** Full-stack business management platform with CRM, real-time inventory tracking, and predictive analytics (Node.js, PostgreSQL, Python, C++).
-- **[Cinder House](https://github.com/aaddi1/Cinder-House):** Boutique luxury hotel experience featuring Three.js 3D spatial visuals and liquid glass styling.
-- **[Advocate Webpage](https://github.com/aaddi1/Advocate-webpage):** High-conversion legal tech practice platform with client consultation workflows.
-- **[Star Inn](https://github.com/aaddi1/Restaurant-webpage):** Contemporary dining & hospitality showcase with interactive menu navigation.
+* Modern glass-style interface
+* Transparent UI components
+* Backdrop blur effects
+* Smooth hover interactions
+* Responsive layouts
+* Modern typography and spacing
+
+### 📜 3. Certificates & Achievements
+
+The portfolio includes a dedicated certificates section for showcasing professional learning, technical certifications, and achievements.
+
+Certificates can be browsed through an interactive interface with visual previews.
+
+### 📂 4. Projects
+
+The portfolio showcases full-stack and software development projects covering areas such as:
+
+* Full Stack Web Applications
+* E-Commerce Applications
+* Real-Time Applications
+* REST API Projects
+* DevOps & CI/CD Projects
+* Cloud Deployment
+* Database Applications
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## 🛠️ Tech Stack
 
-| Category | Technologies / Libraries |
-| :--- | :--- |
-| **Frontend Core** | HTML5 Semantic Markup, ESNext JavaScript, CSS3 Custom Properties |
-| **Graphics & 3D** | HTML5 Canvas 2D Context, WebGL, Three.js, CoreGraphics |
-| **Scroll Animation** | [Lenis](https://github.com/darkroomengineering/lenis) (Smooth Inertial Scrolling) |
-| **Build & Tooling** | [Vite 6](https://vitejs.dev/) (ESBuild, Hot Module Replacement) |
-| **Typography** | Syne (Display), Space Grotesk (Body), JetBrains Mono (Technical/Metadata) |
-| **Legal Document** | Apple PDFKit / CoreGraphics (2-Page Searchable Vector PDF with Embedded Seal) |
+| Category            | Technologies                      |
+| :------------------ | :-------------------------------- |
+| **Frontend**        | React.js, JavaScript, HTML5, CSS3 |
+| **Styling**         | CSS3, Responsive Design           |
+| **Animation**       | HTML5 Canvas, Lenis               |
+| **Build Tool**      | Vite                              |
+| **Backend**         | Node.js, Express.js               |
+| **Database**        | MySQL, MongoDB                    |
+| **DevOps**          | Docker, Kubernetes, Jenkins       |
+| **Cloud**           | AWS                               |
+| **Version Control** | Git, GitHub                       |
+| **Deployment**      | Render                            |
 
 ---
 
-## 📦 Local Development Quickstart
+## 📦 Local Development
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- `npm` or `pnpm` or `yarn`
 
-### Setup Instructions
+* [Node.js](https://nodejs.org/)
+* npm
+* Git
+
+### Setup
+
+Clone the repository:
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/aaddi1/My-Portfolio.git
-cd My-Portfolio
-
-# 2. Install dependencies
-npm install
-
-# 3. Start local development server
-npm run dev
-
-# 4. Open in browser
-# Local URL: http://localhost:5173/
+git clone https://github.com/deepakkumar37881/my-portfolio.git
 ```
 
-### Production Build
+Move into the project directory:
 
 ```bash
-# Build optimized production bundle
-npm run build
+cd my-portfolio
+```
 
-# Preview production build locally
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the application:
+
+```text
+http://localhost:5173/
+```
+
+---
+
+## 🏭 Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
 npm run preview
 ```
 
----
+The production files are generated inside:
 
-## ⚖️ Intellectual Property, Copyright & Legal Terms
-
-All visual designs, 3D frame sequences, shader programs, layout frameworks, and source code in this repository are the exclusive proprietary property of **Aryan Sharma**.
-
-- **Proprietary Notice:** © 2026 Aryan Sharma. All Rights Reserved. See [**`LICENSE`**](./LICENSE).
-- **Prohibitions:** Unauthorized copying, commercial replication, automated scraping, or AI model ingestion is strictly prohibited and subject to civil statutory damages (up to $150,000 USD per work) and criminal prosecution under applicable intellectual property statutes.
-- **Official Legal Deed:** Read the complete 2-page registered legal document: [**`public/legal-notice.pdf`**](./public/legal-notice.pdf)
+```text
+dist/
+```
 
 ---
 
-## 📬 Contact & Connect
+## 🚀 Deployment
+
+This project is deployed using **Render Static Site**.
+
+### Render Configuration
+
+```text
+Service Type: Static Site
+
+Branch: main
+
+Build Command:
+npm install && npm run build
+
+Publish Directory:
+dist
+```
+
+### Deployment Flow
+
+```text
+Local Development
+       ↓
+     Git
+       ↓
+    GitHub
+       ↓
+    Render
+       ↓
+ Live Portfolio
+```
+
+Every time changes are pushed to the `main` branch, Render can automatically build and deploy the latest version.
+
+---
+
+## 📁 Project Structure
+
+```text
+My-Portfolio/
+│
+├── public/
+│   ├── frames/
+│   ├── certificates/
+│   └── assets/
+│
+├── src/
+│   ├── components/
+│   ├── sections/
+│   └── ...
+│
+├── .github/
+│
+├── index.html
+├── package.json
+├── vite.config.js
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 📈 Development Workflow
+
+```bash
+# Check project status
+git status
+
+# Add changes
+git add .
+
+# Create commit
+git commit -m "Update portfolio"
+
+# Push to GitHub
+git push origin main
+```
+
+After pushing the changes, the connected Render deployment can automatically build and publish the updated portfolio.
+
+---
+
+## 📬 Contact
 
 <div align="center">
 
-**Aryan Sharma** &bull; 3D Designer &amp; Creative Engineer  
-📍 *Tundla, Uttar Pradesh 283204, India (Available Worldwide &bull; Remote)*
+### Deepak Kumar
 
-| Platform | Direct Link |
-| :--- | :--- |
-| 📧 **Email** | [aaddisharmarkczw@gmail.com](mailto:aaddisharmarkczw@gmail.com) |
-| 📱 **Phone** | [+91 97286 24010](tel:+919728624010) |
-| 💼 **LinkedIn** | [linkedin.com/in/aryan-sharma11](https://www.linkedin.com/in/aryan-sharma11/) |
-| 💻 **GitHub** | [github.com/aaddi1](https://github.com/aaddi1) |
-| 🐦 **X (Twitter)** | [@aryan56710](https://x.com/aryan56710) |
-| 📸 **Instagram** | [@aryansharma.dev](https://www.instagram.com/aryansharma.dev/) |
+**Full Stack Developer & DevOps Engineer**
 
-</div>
+Building modern, scalable and high-performance web applications.
 
 <br/>
 
+💻 **GitHub**
+
+https://github.com/deepakkumar37881
+
+<br/>
+
+💼 **LinkedIn**
+
+Add your LinkedIn profile here.
+
+<br/>
+
+📧 **Email**
+
+Add your professional email here.
+
+</div>
+
+---
+
+## 📄 License
+
+Copyright © 2026 **Deepak Kumar**.
+
+All rights reserved.
+
+The source code, visual design, assets, and original content of this portfolio are intended for personal and professional portfolio use.
+
+Unauthorized commercial reproduction or redistribution is not permitted without permission.
+
+---
+
 <div align="center">
-  <sub>Engineered with precision by <strong>Aryan Sharma</strong>. Built with 24fps 3D scroll canvas &amp; Apple Clear Liquid Glass.</sub>
+
+### 🚀 You bring the requirement. I build the solution.
+
+**Full Stack Development • DevOps • Cloud • Modern Web Applications**
+
 </div>
