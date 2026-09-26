@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Deepak Kumar — Full Stack Developer & DevOps Engineer</title>
+  <meta name="description"
+    content="Deepak Kumar is a Full Stack Developer & DevOps Engineer building high-performance, SEO-optimized web applications, REST APIs, and scalable digital solutions for businesses." />
+
+  <!-- OpenGraph & Social Preview Meta Tags -->
+  <meta property="og:title" content="Deepak Kumar — Full Stack Developer & DevOps Engineer" />
+  <meta property="og:description"
+    content="High-performance 24fps 3D scroll canvas engine with Apple Clear Liquid Glass UI architecture." />
+  <meta property="og:image" content="./portfolio_thumbnail.png" />
+  <!-- <meta property="og:url" content="https://aaddi1.github.io/My-Portfolio/" /> -->
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Deepak Kumar — Full Stack Developer & DevOps Engineer" />
+  <meta name="twitter:description"
+    content="Full Stack Developer & DevOps Engineer building high-performance, SEO-optimized web applications and scalable digital solutions." />
+  <meta name="twitter:image" content="./portfolio_thumbnail.png" />
+
+  <!-- Favicons & Icons -->
+  <link rel="icon" type="image/svg+xml" href="./profile.png" />
+  <link rel="icon" type="image/png" href="./profile.png" />
+  <link rel="apple-touch-icon" href="./profile.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Unbounded:wght@800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- Top Viewport Scroll Progress Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+  <!-- Minimal Preloader Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">
+        <span id="loader-percent">0%</span>
+      </div>
+      <div class="loader-bar-bg">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed 3D Background Canvas -->
+  <div class="canvas-container">
+    <canvas id="animation-canvas"></canvas>
+    <div class="canvas-overlay"></div>
+  </div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-avatar-wrap">
+          <img src="./profile.png" alt="Deepak Kumar" class="logo-avatar-img" />
+        </div>
+        <div class="logo-info">
+          <span class="logo-text">DEEPAK KUMAR</span>
+          <span class="logo-sub">FULL-STACK DEVELOPER &bull; FREELANCER</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#services" class="nav-link">SERVICES</a>
+        <a href="#projects" class="nav-link">PROJECTS</a>
+        <!-- <a href="#certificates" class="nav-link">CERTIFICATES</a> -->
+        <a href="#testimonials" class="nav-link">TESTIMONIALS</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <a href="#contact" class="btn-pill header-cta">
+        <span>CONTACT ME</span>
+      </a>
+
+      <!-- Mobile Menu Hamburger Button -->
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu"
+        aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Liquid Glass Navigation Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer glass-panel" aria-hidden="true">
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">
+          <span class="mobile-nav-num">01</span>
+          <span class="mobile-nav-text">ABOUT</span>
+        </a>
+        <a href="#services" class="mobile-nav-link">
+          <span class="mobile-nav-num">02</span>
+          <span class="mobile-nav-text">SERVICES</span>
+        </a>
+        <a href="#projects" class="mobile-nav-link">
+          <span class="mobile-nav-num">03</span>
+          <span class="mobile-nav-text">PROJECTS</span>
+        </a>
+        <!-- <a href="#certificates" class="mobile-nav-link">
+          <span class="mobile-nav-num">04</span>
+          <span class="mobile-nav-text">CERTIFICATES</span>
+        </a> -->
+        <a href="#testimonials" class="mobile-nav-link">
+          <span class="mobile-nav-num">05</span>
+          <span class="mobile-nav-text">TESTIMONIALS</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <span class="mobile-nav-num">06</span>
+          <span class="mobile-nav-text">CONTACT</span>
+        </a>
+      </div>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn-pill mobile-nav-cta">
+          <span>GET IN TOUCH</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <div class="mobile-nav-socials">
+          <a href="https://www.linkedin.com/in/deepak-866543436/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63z" />
+            </svg>
+          </a>
+          
+          <a href="https://www.instagram.com/deepak.yadav_79/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://x.com/DeepakK10597620" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content Container -->
+  <main class="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-top-badge hero-reveal-item">
+            <span class="badge-tag">PORTFOLIO '26</span>
+            <span class="badge-divider">/</span>
+            <span class="badge-desc">FULL-STACK DEVELOPER &bull; FREELANCER</span>
+          </div>
+
+          <h1 class="hero-headline hero-reveal-item">
+            <span class="hero-line">HI, I'M</span>
+            <span class="hero-line hero-name">DEEPAK</span>
+          </h1>
+
+          <div class="hero-bio hero-reveal-item">
+            <p>FULL-STACK DEVELOPER BUILDING MODERN, HIGH-PERFORMING &amp;
+              SEO-OPTIMIZED WEB APPLICATIONS DESIGNED TO HELP BUSINESSES GROW ONLINE.
+              &reg;</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Developer Skills Marquee -->
+      <div class="client-marquee-wrapper hero-reveal-item">
+        <div class="client-marquee">
+
+          <div class="marquee-track">
+            <span class="marquee-item">FULL-STACK DEVELOPMENT</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">REACT.JS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">NODE.JS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">REST APIs</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">MYSQL</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">JAVASCRIPT</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">DOCKER</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">AWS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">CI/CD</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">DEVOPS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">THREE.JS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">3D WEB &amp; ANIMATION</span>
+            <span class="marquee-divider">&bull;</span>
+          </div>
+
+          <!-- Duplicate track for infinite animation -->
+          <div class="marquee-track" aria-hidden="true">
+
+            <span class="marquee-item">FULL-STACK DEVELOPMENT</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">REACT.JS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">NODE.JS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">REST APIs</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">MYSQL</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">JAVASCRIPT</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">DOCKER</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">AWS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">CI/CD</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">DEVOPS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">THREE.JS</span>
+            <span class="marquee-divider">&bull;</span>
+
+            <span class="marquee-item">3D WEB &amp; ANIMATION</span>
+            <span class="marquee-divider">&bull;</span>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+
+        <div class="section-tag">
+          <span class="mono-num">01</span>
+          <span class="tag-title">ABOUT DEEPAK</span>
+        </div>
+
+        <div class="about-grid-card glass-panel">
+
+          <!-- Avatar Side -->
+          <div class="about-avatar-col">
+
+            <div class="about-avatar-frame">
+              <img src="./profile.png" alt="Deepak Kumar" class="about-avatar-img" />
+
+              <div class="about-avatar-badge">
+                <span class="status-dot"></span>
+                <span>AVAILABLE FOR FREELANCE</span>
+              </div>
+            </div>
+
+            <div class="about-quick-facts">
+
+              <div class="fact-item">
+                <span class="fact-label">LOCATION</span>
+                <span class="fact-value">
+                  India &bull; Available Worldwide
+                </span>
+              </div>
+
+              <div class="fact-item">
+                <span class="fact-label">ROLE</span>
+                <span class="fact-value">
+                  Software Developer &bull; Freelancer
+                </span>
+              </div>
+
+              <div class="fact-item">
+                <span class="fact-label">CORE FOCUS</span>
+                <span class="fact-value">
+                  Full-Stack Development &bull; DevOps &bull; Interactive Web
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Bio Content Side -->
+          <div class="about-content-col">
+
+            <h2 class="section-title">ABOUT ME</h2>
+
+            <div class="about-bio-paragraphs">
+
+              <p class="lead-text">
+                I'm a Full-Stack Developer and Freelancer focused on building
+                modern, reliable and SEO-optimized web applications. I turn
+                business requirements and ideas into complete digital
+                solutions with clean interfaces and solid backend systems.
+              </p>
+
+              <p class="sub-text">
+                I work across the full stack, developing responsive frontend
+                applications, REST APIs, authentication systems, and
+                database-driven platforms. My focus is on writing maintainable
+                code and creating applications that are fast, secure, and
+                easy to use.
+              </p>
+
+              <p class="sub-text">
+                I also work with Docker, AWS, CI/CD, and cloud deployment.
+                For projects that need a more engaging experience, I can
+                integrate interactive 3D visuals, animations, and modern
+                web interactions using Three.js and WebGL.
+              </p>
+
+            </div>
+
+
+            <!-- Technical Skills Matrix -->
+            <div class="skills-matrix">
+
+              <!-- Frontend -->
+              <div class="skill-category">
+                <span class="skill-cat-title">FRONTEND</span>
+
+                <div class="skill-pills">
+                  <span>React.js</span>
+                  <span>JavaScript</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Tailwind CSS</span>
+                </div>
+              </div>
+
+
+              <!-- Backend -->
+              <div class="skill-category">
+                <span class="skill-cat-title">BACKEND &amp; DATABASE</span>
+
+                <div class="skill-pills">
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>REST APIs</span>
+                  <span>MySQL</span>
+                  <span>MongoDB</span>
+                  <span>JWT</span>
+                </div>
+              </div>
+
+
+              <!-- DevOps -->
+              <div class="skill-category">
+                <span class="skill-cat-title">DEVOPS &amp; CLOUD</span>
+
+                <div class="skill-pills">
+                  <span>Docker</span>
+                  <span>AWS</span>
+                  <span>Jenkins</span>
+                  <span>CI/CD</span>
+                  <span>Kubernetes</span>
+                  <span>Git</span>
+                </div>
+              </div>
+
+
+              <!-- Interactive Web -->
+              <div class="skill-category">
+                <span class="skill-cat-title">3D &amp; INTERACTIVE WEB</span>
+
+                <div class="skill-pills">
+                  <span>Three.js</span>
+                  <span>WebGL</span>
+                  <span>3D Animation</span>
+                  <span>Interactive UI</span>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- About Footer -->
+            <div class="about-footer">
+
+              <div class="about-actions">
+
+                <a href="#contact" class="btn-pill">
+                  <span>LET'S WORK TOGETHER</span>
+
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/deepak-866543436/" target="_blank" rel="noopener"
+                  class="btn-ghost">
+
+                  <span>LINKEDIN PROFILE</span>
+
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+
+                </a>
+
+              </div>
+
+
+              <!-- Stats -->
+              <div class="stats-row">
+
+                <div class="stat-box">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">PROJECTS</span>
+                </div>
+
+                <div class="stat-box">
+                  <span class="stat-number">4+</span>
+                  <span class="stat-label">TECH AREAS</span>
+                </div>
+
+                <div class="stat-box">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">COMMITMENT</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-tag">
+          <span class="mono-num">02</span>
+          <span class="tag-title">WHAT I DO</span>
+        </div>
+
+        <h2 class="section-title">SERVICES</h2>
+
+        <div class="services-list">
+
+          <!-- Service 01 -->
+          <div class="service-item glass-panel">
+            <div class="service-header">
+              <span class="service-num">01</span>
+              <h3 class="service-name">FULL-STACK DEVELOPMENT</h3>
+            </div>
+            <p class="service-desc">
+              Development of modern, scalable web applications with responsive
+              interfaces, secure backend systems, database integration, and
+              complete end-to-end functionality.
+            </p>
+            <div class="service-tags">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-item glass-panel">
+            <div class="service-header">
+              <span class="service-num">02</span>
+              <h3 class="service-name">FRONTEND DEVELOPMENT</h3>
+            </div>
+            <p class="service-desc">
+              Building fast, responsive, and modern user interfaces that provide
+              smooth experiences across desktop, tablet, and mobile devices.
+            </p>
+            <div class="service-tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-item glass-panel">
+            <div class="service-header">
+              <span class="service-num">03</span>
+              <h3 class="service-name">BACKEND &amp; API DEVELOPMENT</h3>
+            </div>
+            <p class="service-desc">
+              Building reliable backend systems and REST APIs with authentication,
+              database integration, business logic, and secure data handling.
+            </p>
+            <div class="service-tags">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="service-item glass-panel">
+            <div class="service-header">
+              <span class="service-num">04</span>
+              <h3 class="service-name">DEVOPS &amp; CLOUD DEPLOYMENT</h3>
+            </div>
+            <p class="service-desc">
+              Deploying and managing web applications using containerization,
+              cloud infrastructure, and automated CI/CD workflows for reliable
+              production environments.
+            </p>
+            <div class="service-tags">
+              <span>Docker</span>
+              <span>AWS</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Service 05 -->
+          <div class="service-item glass-panel">
+            <div class="service-header">
+              <span class="service-num">05</span>
+              <h3 class="service-name">3D WEB &amp; INTERACTIVE ANIMATION</h3>
+            </div>
+            <p class="service-desc">
+              Creating immersive web experiences with interactive 3D visuals,
+              smooth animations, and engaging interfaces that make websites
+              visually distinctive.
+            </p>
+            <div class="service-tags">
+              <span>Three.js</span>
+              <span>WebGL</span>
+              <span>3D Animation</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-tag">
+          <span class="mono-num">03</span>
+          <span class="tag-title">FEATURED REPOSITORIES</span>
+        </div>
+
+        <h2 class="section-title">PROJECTS</h2>
+
+        <div class="projects-grid">
+          <!-- Project 01: NEXUS -->
+          <div class="project-card glass-panel">
+            <div class="project-thumb-wrap">
+              <img src="./projects/nexus.png" alt="NEXUS Business Intelligence Platform" class="project-thumb-img"
+                loading="lazy" />
+              <span class="project-thumb-tag">FULL-STACK &bull; BI PLATFORM</span>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-idx">01</span>
+                <span class="project-tag">POSTGRESQL &bull; PYTHON &bull; NODE</span>
+              </div>
+              <div class="project-meta">
+                <span class="client-label">OPEN SOURCE REPOSITORY</span>
+                <h3 class="client-name">NEXUS Platform</h3>
+              </div>
+              <p class="project-info">
+                Full-stack business management platform featuring CRM, real-time inventory tracking, automated
+                invoicing, predictive business intelligence, and C++ analytics acceleration.
+              </p>
+              <div class="project-tags-row">
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Python</span>
+                <span>C++</span>
+                <span>Analytics</span>
+              </div>
+              <!-- <div class="project-footer">
+                <a href="https://github.com/aaddi1/NEXUS" target="_blank" rel="noopener" class="project-link">
+                  <span>VIEW ON GITHUB</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Project 02: Cinder House -->
+          <div class="project-card glass-panel">
+            <div class="project-thumb-wrap">
+              <img src="./projects/cinder_house.png" alt="Cinder House Boutique Hotel" class="project-thumb-img"
+                loading="lazy" />
+              <span class="project-thumb-tag">3D WEB &bull; THREE.JS</span>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-idx">02</span>
+                <span class="project-tag">THREE.JS &bull; WEBGL &bull; LIQUID GLASS</span>
+              </div>
+              <div class="project-meta">
+                <span class="client-label">3D HOTEL EXPERIENCE</span>
+                <h3 class="client-name">Cinder House</h3>
+              </div>
+              <p class="project-info">
+                Boutique hotel web experience designed to create an immersive digital experience combining Three.js 3D
+                spatial visuals, fluid interactions, responsive design, and liquid glass styling.
+              </p>
+              <div class="project-tags-row">
+                <span>Three.js</span>
+                <span>WebGL</span>
+                <span>3D Visuals</span>
+                <span>Liquid Glass</span>
+                <span>UI/UX</span>
+              </div>
+              <!-- <div class="project-footer">
+                <a href="https://github.com/aaddi1/Cinder-House" target="_blank" rel="noopener" class="project-link">
+                  <span>VIEW ON GITHUB</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Project 03: Advocate Webpage -->
+          <div class="project-card glass-panel">
+            <div class="project-thumb-wrap">
+              <img src="./projects/advocate.png" alt="Advocate Legal Webpage" class="project-thumb-img"
+                loading="lazy" />
+              <span class="project-thumb-tag">LEGAL TECH &bull; CLIENT PORTAL</span>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-idx">03</span>
+                <span class="project-tag">LEGAL TECH &bull; BOOKINGS</span>
+              </div>
+              <div class="project-meta">
+                <span class="client-label">LEGAL SERVICES PORTAL</span>
+                <h3 class="client-name">Advocate Platform</h3>
+              </div>
+              <p class="project-info">
+                Modern, responsive advocate and law firm web application designed to showcase legal services, establish
+                client trust, streamline case inquiries, and handle direct client consultation workflows.
+              </p>
+              <div class="project-tags-row">
+                <span>Responsive Web</span>
+                <span>Legal UI</span>
+                <span>Consultation</span>
+                <span>Modern UX</span>
+              </div>
+              <!-- <div class="project-footer">
+                <a href="https://github.com/aaddi1/Advocate-webpage" target="_blank" rel="noopener"
+                  class="project-link">
+                  <span>VIEW ON GITHUB</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Project 04: Restaurant Webpage -->
+          <div class="project-card glass-panel">
+            <div class="project-thumb-wrap">
+              <img src="./projects/picture4.png" alt="AI Interview Platform" class="project-thumb-img" loading="lazy" />
+              <span class="project-thumb-tag">AI &bull; INTERVIEW PLATFORM</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-idx">04</span>
+                <span class="project-tag">AI &bull; FULL-STACK APPLICATION</span>
+              </div>
+
+              <div class="project-meta">
+                <span class="client-label">AI INTERVIEW PLATFORM</span>
+                <h3 class="client-name">AI Interview</h3>
+              </div>
+
+              <p class="project-info">
+                AI-powered interview platform designed to simulate interview
+                experiences, help candidates practice technical and behavioral
+                questions, and improve their interview performance through
+                intelligent feedback.
+              </p>
+
+              <div class="project-tags-row">
+                <span>AI</span>
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Interview Practice</span>
+              </div>
+
+              <!-- <div class="project-footer">
+      <a href="#" target="_blank" rel="noopener" class="project-link">
+        <span>VIEW PROJECT</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17" />
+        </svg>
+      </a>
+    </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-tag">
+          <span class="mono-num">04</span>
+          <span class="tag-title">TESTIMONIALS</span>
+        </div>
+
+        <h2 class="section-title">What Clients Are Saying</h2>
+
+        <div class="testimonials-grid">
+
+          <!-- Card 1 -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-icon">&ldquo;</div>
+            <p class="testimonial-body">
+              Deepak built a clean and responsive website for our business with
+              excellent attention to detail. The entire experience was smooth,
+              professional, and delivered exactly as requested.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">RAHUL SHARMA</span>
+              <span class="author-role">SMALL BUSINESS OWNER</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-icon">&ldquo;</div>
+            <p class="testimonial-body">
+              Deepak created an interactive web experience with smooth 3D animations
+              and modern UI interactions. The animations made our website feel much
+              more engaging while keeping the experience fast and responsive.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">ROHIT VERMA</span>
+              <span class="author-role">STARTUP FOUNDER</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-icon">&ldquo;</div>
+            <p class="testimonial-body">
+              Deepak implemented authentication, API integration, and database
+              functionality for our application. He understood the requirements
+              quickly and delivered a reliable solution.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">AMIT VERMA</span>
+              <span class="author-role">PRODUCT OWNER</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-icon">&ldquo;</div>
+            <p class="testimonial-body">
+              We needed a modern dashboard for our business, and Deepak turned
+              the requirements into a clean and functional interface. The
+              responsive design and user experience were excellent.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">NEHA GUPTA</span>
+              <span class="author-role">BUSINESS OWNER</span>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-icon">&ldquo;</div>
+            <p class="testimonial-body">
+              Deepak combined full-stack development with interactive 3D elements
+              to create a unique website experience. The result was visually
+              impressive, responsive, and easy for our users to navigate.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">ARJUN MALHOTRA</span>
+              <span class="author-role">DIGITAL PRODUCT OWNER</span>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="testimonial-card glass-panel">
+            <div class="quote-icon">&ldquo;</div>
+            <p class="testimonial-body">
+              Working with Deepak was a great experience. He transformed our
+              requirements into a professional web application with a modern
+              interface, solid functionality, and reliable performance.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">KARAN SINGH</span>
+              <span class="author-role">BUSINESS CONSULTANT</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-tag">
+          <span class="mono-num">05</span>
+          <span class="tag-title">GET IN TOUCH</span>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left Column -->
+          <div class="contact-info-col">
+            <h2 class="contact-heading">
+              LET'S<br>GET IN<br>TOUCH
+            </h2>
+
+            <div class="contact-direct">
+              <span class="direct-label">DIRECT INQUIRIES</span>
+              <a href="mailto:dpkkr37881@gmail.com" class="direct-email">dpkkr37881@gmail.com</a>
+              <a href="tel:+918210925942" class="direct-phone">+91 82109 25942</a>
+            </div>
+
+            <div class="contact-availability">
+              <span class="status-dot green"></span>
+              <span>Available for freelance, consulting &amp; engineering contracts</span>
+            </div>
+          </div>
+
+          <!-- Right Column / Interactive Form -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="contact-form glass-panel">
+              <div class="form-group">
+                <label for="name">YOUR NAME</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">EMAIL ADDRESS</label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" inputmode="email"
+                    autocomplete="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+91 82109 25942" inputmode="tel"
+                    autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">PROJECT DETAILS</label>
+                <textarea id="message" name="message" rows="4"
+                  placeholder="Tell me about your project, timeline, and goals..." required
+                  spellcheck="true"></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn-submit">
+                <span>SEND MESSAGE</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Giant Footer Title -->
+        <div class="footer-hero-brand">
+          <span class="giant-name">DEEPAK KUMAR</span>
+        </div>
+
+        <!-- Comprehensive Footer -->
+        <footer class="site-footer">
+          <!-- Col 1: Social Links -->
+          <div class="footer-col">
+            <span class="footer-heading">SOCIAL HANDLES</span>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.instagram.com/deepak.yadav_79/" target="_blank" rel="noopener"
+                  class="footer-social-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                  <span>Instagram</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/deepak-866543436/" target="_blank" rel="noopener"
+                  class="footer-social-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  <span>LinkedIn</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="https://github.com/aaddi1" target="_blank" rel="noopener" class="footer-social-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>GitHub</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              </li> -->
+              <li>
+                <a href="https://x.com/DeepakK10597620" target="_blank" rel="noopener" class="footer-social-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  <span>X (Twitter)</span>
+                  <span class="link-arrow">&nearr;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Quick Navigation -->
+          <div class="footer-col">
+            <span class="footer-heading">NAVIGATION</span>
+            <ul class="footer-links">
+              <li><a href="#hero">Back to Top &uarr;</a></li>
+              <li><a href="#about">About deepak</a></li>
+              <li><a href="#services">Services &amp; Capabilities</a></li>
+              <li><a href="#projects">Selected Projects</a></li>
+              <!-- <li><a href="#certificates">Verified Credentials</a></li> -->
+              <li><a href="#testimonials">Client Testimonials</a></li>
+              <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Direct Inquiries & Address -->
+          <div class="footer-col">
+            <span class="footer-heading">DIRECT INQUIRIES</span>
+            <ul class="footer-links">
+              <li><a href="mailto:dpkkr37881@gmail.com" class="highlight-link">dpkkr37881@gmail.com</a></li>
+              <li><a href="tel:+918210925942">+91 82109 25942</a></li>
+              <li class="address-text">Bengaluru, Karnataka<br>India</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Legal Terms & IP Protections -->
+          <div class="footer-col footer-col-right">
+            <span class="footer-heading">SOFTWARE DEVELOPER</span>
+
+            <p class="copyright">
+              &copy; 2026 Deepak Kumar. All rights reserved.
+            </p>
+
+            <div class="legal-notice-wrap">
+              <p class="legal-text">
+                I build modern web applications, scalable APIs,
+                dashboards, and reliable digital solutions for
+                businesses and startups.
+              </p>
+
+              <a href="#contact" class="legal-pdf-btn">
+                <span>START A PROJECT &nearr;</span>
+              </a>
+            </div>
+
+            <div class="footer-status-pill">
+              <span class="status-dot"></span>
+              <span>Available for Freelance Projects</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Floating Speed-Dial Connect Hub -->
+  <div id="floating-connect-hub" class="floating-connect-hub">
+    <!-- Speed-dial expanding menu items -->
+    <div id="speed-dial-menu" class="speed-dial-menu">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/918210925942?text=Hi%20Deepak,%20I%20saw%20your%20portfolio!" target="_blank"
+        rel="noopener" class="dial-item dial-whatsapp" data-label="WhatsApp Chat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/deepak-866543436/" target="_blank" rel="noopener"
+        class="dial-item dial-linkedin" data-label="LinkedIn Profile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63z" />
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/deepak.yadav_79/" target="_blank" rel="noopener"
+        class="dial-item dial-instagram" data-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://x.com/DeepakK10597620" target="_blank" rel="noopener" class="dial-item dial-x"
+        data-label="X (Twitter)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+
+      <!-- GitHub -->
+      <!-- <a href="https://github.com/aaddi1" target="_blank" rel="noopener" class="dial-item dial-github" data-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a> -->
+
+      <!-- Direct Call -->
+      <a href="tel:+918210925942" class="dial-item dial-phone" data-label="Call +91 82109 25942">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Main Floating Trigger Button -->
+    <button id="floating-connect-btn" class="floating-connect-btn glass-panel" aria-label="Open Connect Menu">
+      <div class="btn-icon-swap">
+        <!-- Message / Send icon -->
+        <svg class="icon-phone" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+        <!-- Close icon -->
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <!-- Certificate Viewer Modal -->
+  <div id="cert-modal" class="cert-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-window glass-panel">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Certificate</h3>
+        <div class="modal-actions">
+          <a id="modal-download" href="#" target="_blank" class="modal-action-btn" download>Open Original &nearr;</a>
+          <button id="modal-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div id="modal-body" class="modal-body">
+        <!-- Injected image or iframe -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
