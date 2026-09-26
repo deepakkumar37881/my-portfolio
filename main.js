@@ -2,7 +2,7 @@ import Lenis from 'https://cdn.jsdelivr.net/npm/lenis@1.1.20/+esm';
 
 const TOTAL_FRAMES = 120;
 const FRAME_PATH = (index) =>
-  `./frames/ezgif-frame-${String(index).padStart(3, '0')}.jpg`;
+  `/frames/ezgif-frame-${String(index).padStart(3, '0')}.jpg`;
 
 // Touch / Device Detection
 const isTouchDevice = () => {
